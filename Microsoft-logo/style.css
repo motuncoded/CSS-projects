@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.microsoft-logo {
+  width: 350px;
+  margin: 25px auto;
+}
+.square {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+.square:nth-child(1) {
+  background-color: #f35322;
+}
+.square:nth-child(2) {
+  background-color: #81dc05;
+}
+.square:nth-child(3) {
+  background-color: #05a6f1;
+}
+.square:nth-child(4) {
+  background-color: #ffba05;
+}

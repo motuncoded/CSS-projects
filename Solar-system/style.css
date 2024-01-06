@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.solar-container {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.sun {
+  background-image: url(./assests/sun.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 25rem;
+}
+
+.planet {
+  position: absolute;
+}
+.earth {
+  display: inline-block;
+  background-image: url(./assests/earth.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  top: -20%;
+  left: -20%;
+  transform-origin: 320px 280px;
+  animation: rotate 12s infinite linear;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
